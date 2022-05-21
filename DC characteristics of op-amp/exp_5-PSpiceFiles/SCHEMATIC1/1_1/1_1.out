@@ -1,0 +1,236 @@
+
+**** 11/04/20 18:30:46 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-1_1"  [ C:\WINDOWS\Temp\exp_5-PSpiceFiles\SCHEMATIC1\1_1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "1_1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source EXP_5
+X_U1         0 N00220 N000562 N000563 N00232 LM741
+V_V1         N000562 0 15
+V_V2         0 N000563 15
+R_R1         N00220 N00232  1M TC=0,0 
+C_C1         N00220 N00232  0.01u  TC=0,0 
+V_V4         N005612 0 15
+R_R2         N00471 N00479  1M TC=0,0 
+C_C2         N00471 N00479  0.01u  TC=0,0 
+V_V3         0 N005271 15
+X_U2         N00882 N00471 N005612 N005271 N00479 LM741
+C_C3         0 N00882  0.01u  TC=0,0 
+R_R3         0 N00882  1M TC=0,0 
+V_V5         0 N016201 15
+V_V6         N016542 0 15
+C_C5         0 N01666  0.01u  TC=0,0 
+R_R5         0 N01666  1M TC=0,0 
+X_U3         N01666 N01584 N016542 N016201 N01584 LM741
+
+**** RESUMING 1_1.cir ****
+.END
+
+**** 11/04/20 18:30:46 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-1_1"  [ C:\WINDOWS\Temp\exp_5-PSpiceFiles\SCHEMATIC1\1_1.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.x_lm741.dx X_U1.x_lm741.dy X_U2.x_lm741.dx X_U2.x_lm741.dy 
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03    1               1.000000E-03 
+         CJO                   10.000000E-12                   10.000000E-12 
+
+
+               X_U3.x_lm741.dx X_U3.x_lm741.dy 
+          IS  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03 
+         CJO                   10.000000E-12 
+
+
+**** 11/04/20 18:30:46 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-1_1"  [ C:\WINDOWS\Temp\exp_5-PSpiceFiles\SCHEMATIC1\1_1.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.x_lm741.qx X_U2.x_lm741.qx X_U3.x_lm741.qx 
+               NPN             NPN             NPN             
+       LEVEL    1               1               1            
+          IS  800.000000E-18  800.000000E-18  800.000000E-18 
+          BF   93.75           93.75           93.75         
+          NF    1               1               1            
+          BR    1               1               1            
+          NR    1               1               1            
+         ISS    0               0               0            
+          RE    0               0               0            
+          RC    0               0               0            
+         CJE    0               0               0            
+         VJE     .75             .75             .75         
+         CJC    0               0               0            
+         VJC     .75             .75             .75         
+         MJC     .33             .33             .33         
+        XCJC    1               1               1            
+         CJS    0               0               0            
+         VJS     .75             .75             .75         
+          KF    0               0               0            
+          AF    1               1               1            
+          CN    2.42            2.42            2.42         
+           D     .87             .87             .87         
+
+
+**** 11/04/20 18:30:46 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-1_1"  [ C:\WINDOWS\Temp\exp_5-PSpiceFiles\SCHEMATIC1\1_1.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00220) 19.25E-06 (N00232) 19.25E-06 (N00471) 19.25E-06 (N00479) 19.25E-06     
+
+(N00882)-79.72E-12 (N01584) 19.25E-06 (N01666)-79.72E-12 (N000562)   15.0000    
+
+(N000563)  -15.0000                   (N005271)  -15.0000                       
+
+(N005612)   15.0000                   (N016201)  -15.0000                       
+
+(N016542)   15.0000                   (X_U1.x_lm741.6)-3.310E-09                
+
+(X_U1.x_lm741.7) 23.24E-06            (X_U1.x_lm741.8) 23.24E-06                
+
+(X_U1.x_lm741.9)    0.0000            (X_U2.x_lm741.6)-3.235E-09                
+
+(X_U2.x_lm741.7) 23.24E-06            (X_U2.x_lm741.8) 23.24E-06                
+
+(X_U2.x_lm741.9)    0.0000            (X_U3.x_lm741.6)-3.235E-09                
+
+(X_U3.x_lm741.7) 23.24E-06            (X_U3.x_lm741.8) 23.24E-06                
+
+(X_U3.x_lm741.9)    0.0000            (X_U1.x_lm741.10)    -.6077               
+
+(X_U1.x_lm741.11)   14.9600           (X_U1.x_lm741.12)   14.9600               
+
+(X_U1.x_lm741.13)    -.5938           (X_U1.x_lm741.14)    -.5938               
+
+(X_U1.x_lm741.53)   14.0000           (X_U1.x_lm741.54)  -14.0000               
+
+(X_U1.x_lm741.90) 79.76E-06           (X_U1.x_lm741.91)   40.0000               
+
+(X_U1.x_lm741.92)  -40.0000           (X_U1.x_lm741.99)    0.0000               
+
+(X_U2.x_lm741.10)    -.6077           (X_U2.x_lm741.11)   14.9600               
+
+(X_U2.x_lm741.12)   14.9600           (X_U2.x_lm741.13)    -.5938               
+
+(X_U2.x_lm741.14)    -.5938           (X_U2.x_lm741.53)   14.0000               
+
+(X_U2.x_lm741.54)  -14.0000           (X_U2.x_lm741.90) 79.76E-06               
+
+(X_U2.x_lm741.91)   40.0000           (X_U2.x_lm741.92)  -40.0000               
+
+(X_U2.x_lm741.99)    0.0000           (X_U3.x_lm741.10)    -.6077               
+
+(X_U3.x_lm741.11)   14.9600           (X_U3.x_lm741.12)   14.9600               
+
+(X_U3.x_lm741.13)    -.5938           (X_U3.x_lm741.14)    -.5938               
+
+(X_U3.x_lm741.53)   14.0000           (X_U3.x_lm741.54)  -14.0000               
+
+(X_U3.x_lm741.90) 79.76E-06           (X_U3.x_lm741.91)   40.0000               
+
+(X_U3.x_lm741.92)  -40.0000           (X_U3.x_lm741.99)    0.0000           
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.667E-03
+    V_V2        -1.667E-03
+    V_V4        -1.667E-03
+    V_V3        -1.667E-03
+    V_V5        -1.667E-03
+    V_V6        -1.667E-03
+    X_U1.x_lm741.vb  -3.310E-14
+    X_U1.x_lm741.vc   1.400E-11
+    X_U1.x_lm741.ve   1.592E-11
+    X_U1.x_lm741.vlim   7.976E-08
+    X_U1.x_lm741.vlp  -4.000E-11
+    X_U1.x_lm741.vln  -4.000E-11
+    X_U2.x_lm741.vb  -3.235E-14
+    X_U2.x_lm741.vc   1.400E-11
+    X_U2.x_lm741.ve   1.592E-11
+    X_U2.x_lm741.vlim   7.976E-08
+    X_U2.x_lm741.vlp  -4.000E-11
+    X_U2.x_lm741.vln  -4.000E-11
+    X_U3.x_lm741.vb  -3.235E-14
+    X_U3.x_lm741.vc   1.400E-11
+    X_U3.x_lm741.ve   1.592E-11
+    X_U3.x_lm741.vlim   7.976E-08
+    X_U3.x_lm741.vlp  -4.000E-11
+    X_U3.x_lm741.vln  -4.000E-11
+
+    TOTAL POWER DISSIPATION   1.50E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 11/04/20 18:30:46 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-1_1"  [ C:\WINDOWS\Temp\exp_5-PSpiceFiles\SCHEMATIC1\1_1.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .17
+

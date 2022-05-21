@@ -1,0 +1,52 @@
+
+**** 11/04/20 19:04:59 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-exp_4"  [ C:\WINDOWS\Temp\exp_4-PSpiceFiles\SCHEMATIC1\exp_4.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "exp_4.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 6ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source EXP_4
+X_U1         N00254 N00275 N000562 N000563 N00316 LM741
+V_V1         0 N000563 15
+V_V2         N000562 0 15
+R_R1         N00275 N00316  4.5k TC=0,0 
+R_R2         N00254 N00316  10k TC=0,0 
+R_R3         0 N00254  10k TC=0,0 
+C_C1         0 N00275  0.1u  TC=0,0 
+X_U2         0 N00504 N004962 N004621 N00508 LM741
+V_V4         N004962 0 15
+V_V3         0 N004621 15
+C_C2         N00504 N00508  0.1u  TC=0,0 
+R_R4         N00504 N00508  10k TC=0,0 
+R_R5         N01945 N00504  10k TC=0,0 
+
+**** RESUMING exp_4.cir ****
+.END
+
+ERROR(ORPSIM-15141): Less than 2 connections at node N01945.
+

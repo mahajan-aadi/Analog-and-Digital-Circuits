@@ -1,0 +1,137 @@
+
+**** 11/05/20 13:36:00 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-multi"  [ C:\Users\dell\Desktop\courses\adc\adder-7__multi-8\adder\multi-pspicefiles\schematic1\multi.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "multi.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 8m 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source MULTI
+X_U1         $D_LO $D_LO N00263 N00435 N00558 N01077 N01077 N00558 $D_LO N00558
++  N00558 $D_HI M_UN0001 M_UN0002 $G_DPWR $G_DGND 74153 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+U_A         STIM(1,1) $G_DPWR $G_DGND N00263 IO_STM IO_LEVEL=0 
++ 0 0
++ +4m 1
++REPEAT FOREVER
++ +4m 0
++  +4m 1
++ ENDREPEAT
+U_B         STIM(1,1) $G_DPWR $G_DGND N00435 IO_STM IO_LEVEL=0 
++ 0 0
++ +2m 1
++REPEAT FOREVER
++ +2m 0
++  +2m 1
++ ENDREPEAT
+U_C         STIM(1,1) $G_DPWR $G_DGND N00558 IO_STM IO_LEVEL=0 
++ 0 0
++ +1m 1
++REPEAT FOREVER
++ +1m 0
++  +1m 1
++ ENDREPEAT
+X_U2A         N00558 N01077 $G_DPWR $G_DGND 7404 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+
+**** RESUMING multi.cir ****
+.END
+
+**** 11/05/20 13:36:00 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-multi"  [ C:\Users\dell\Desktop\courses\adc\adder-7__multi-8\adder\multi-pspicefiles\schematic1\multi.sim ] 
+
+
+ ****     Digital Gate MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D0_GATE         D_04            
+      TPLHMN    0               4.800000E-09 
+      TPLHTY    0              12.000000E-09 
+      TPLHMX    0              22.000000E-09 
+      TPHLMN    0               3.200000E-09 
+      TPHLTY    0               8.000000E-09 
+      TPHLMX    0              15.000000E-09 
+
+
+**** 11/05/20 13:36:00 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-multi"  [ C:\Users\dell\Desktop\courses\adc\adder-7__multi-8\adder\multi-pspicefiles\schematic1\multi.sim ] 
+
+
+ ****     Digital IO  MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IO_STM          IO_STD          
+        DRVL    0             104            
+        DRVH    0              96.4          
+       AtoD1                 AtoD_STD        
+       AtoD2                 AtoD_STD_NX     
+       AtoD3                 AtoD_STD        
+       AtoD4                 AtoD_STD_NX     
+       DtoA1 DtoA_STM        DtoA_STD        
+       DtoA2 DtoA_STM        DtoA_STD        
+       DtoA3 DtoA_STM        DtoA_STD        
+       DtoA4 DtoA_STM        DtoA_STD        
+      TSWHL1                    1.511000E-09 
+      TSWHL2                    1.487000E-09 
+      TSWHL3                    1.511000E-09 
+      TSWHL4                    1.487000E-09 
+      TSWLH1                    3.517000E-09 
+      TSWLH2                    3.564000E-09 
+      TSWLH3                    3.517000E-09 
+      TSWLH4                    3.564000E-09 
+       TPWRT  100.000000E+03  100.000000E+03 
+
+
+
+          JOB CONCLUDED
+
+**** 11/05/20 13:36:00 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-multi"  [ C:\Users\dell\Desktop\courses\adc\adder-7__multi-8\adder\multi-pspicefiles\schematic1\multi.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time                    =         .17
+

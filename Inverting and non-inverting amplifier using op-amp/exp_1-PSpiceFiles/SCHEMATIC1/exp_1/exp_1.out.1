@@ -1,0 +1,53 @@
+
+**** 11/04/20 17:42:58 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-exp_1"  [ C:\WINDOWS\Temp\exp_1-PSpiceFiles\SCHEMATIC1\exp_1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "exp_1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 20ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source EXP_1
+X_U1         N00461 0 0 N000563 N00513 LM741
+X_U2         N00662 N00605 N000862 N000863 N00689 LM741
+R_R1         N00461 N00513  1k TC=0,0 
+R_R2         N00457 N00461  1k TC=0,0 
+R_R3         N00662 N00689  1k TC=0,0 
+R_R4         0 N00662  1k TC=0,0 
+V_V1         0 0 15
+V_V2         N000563 0 15
+V_V3         0 N000862 15
+V_V4         N000863 0 15
+V_V5         N00457 0  
++SIN 0 1 50 0 0 0
+V_V6         N00605 0  
++SIN 0 1 50 0 0 0
+
+**** RESUMING exp_1.cir ****
+.END
+
+ERROR(ORPSIM-15143): Voltage source and/or inductor loop involving V_V1. You may break the loop by adding a series resistance
+

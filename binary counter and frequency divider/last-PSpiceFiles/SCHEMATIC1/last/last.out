@@ -1,0 +1,202 @@
+
+**** 11/04/20 17:03:32 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-last"  [ C:\Users\dell\Desktop\courses\adc\exp_10\last-pspicefiles\schematic1\last.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "last.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 20ms 0 
+.OPTIONS ADVCONV
+.OPTIONS DIGINITSTATE= 0
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LAST
+X_U1A         $D_LO $D_LO N00902 $D_HI $D_HI N00344 M_UN0001 $G_CD4000_VDD
++  $G_CD4000_VSS CD4027A PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U1B         $D_LO $D_LO N00902 N00344 N00344 N00703 M_UN0002 $G_CD4000_VDD
++  $G_CD4000_VSS CD4027A PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U2A         $D_LO $D_LO N00902 N01310 N01310 M_UN0003 M_UN0004 $G_CD4000_VDD
++  $G_CD4000_VSS CD4027A PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U3A         N00344 N00703 N01310 $G_DPWR $G_DGND 7408 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+U_DSTM1         STIM(1,1) $G_DPWR $G_DGND N00902 IO_STM IO_LEVEL=0 
++ 0 0
++ +1m 1
++REPEAT FOREVER
++ +1m 0
++  +1m 1
++ ENDREPEAT
+U_DSTM2         STIM(1,1) $G_DPWR $G_DGND N02382 IO_STM IO_LEVEL=0 
++ 0 0
++ +5u 1
++REPEAT FOREVER
++ +5u 0
++  +5u 1
++ ENDREPEAT
+X_U4A         $D_LO $D_LO N02382 $D_HI $D_HI N02657 M_UN0005 $G_CD4000_VDD
++  $G_CD4000_VSS CD4027A PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U4B         $D_LO $D_LO N02657 $D_HI $D_HI N02669 M_UN0006 $G_CD4000_VDD
++  $G_CD4000_VSS CD4027A PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U5A         $D_LO $D_LO N02669 $D_HI $D_HI N02681 M_UN0007 $G_CD4000_VDD
++  $G_CD4000_VSS CD4027A PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U5B         $D_LO $D_LO N02681 $D_HI $D_HI M_UN0008 M_UN0009 $G_CD4000_VDD
++  $G_CD4000_VSS CD4027A PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+
+**** RESUMING last.cir ****
+.END
+
+**** 11/04/20 17:03:32 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-last"  [ C:\Users\dell\Desktop\courses\adc\exp_10\last-pspicefiles\schematic1\last.sim ] 
+
+
+ ****     Digital Gate MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D0_GATE         D_CD4027A_1     D_08            
+      TPLHMN    0               0               7.000000E-09 
+      TPLHTY    0               0              17.500000E-09 
+      TPLHMX    0               0              27.000000E-09 
+      TPHLMN    0              40.000000E-09    4.800000E-09 
+      TPHLTY    0             100.000000E-09   12.000000E-09 
+      TPHLMX    0             160.000000E-09   19.000000E-09 
+
+
+**** 11/04/20 17:03:32 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-last"  [ C:\Users\dell\Desktop\courses\adc\exp_10\last-pspicefiles\schematic1\last.sim ] 
+
+
+ ****     Digital Edge Triggered FF MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D_CD4027A_2     D_CD4027A_3     
+  TPCLKQLHMN   30.000000E-09   64.000000E-09 
+  TPCLKQLHTY   75.000000E-09  160.000000E-09 
+  TPCLKQLHMX  120.000000E-09  360.000000E-09 
+  TPCLKQHLMN   30.000000E-09   64.000000E-09 
+  TPCLKQHLTY   75.000000E-09  160.000000E-09 
+  TPCLKQHLMX  120.000000E-09  360.000000E-09 
+   TPPCQLHMN    0              70.000000E-09 
+   TPPCQLHTY    0             175.000000E-09 
+   TPPCQLHMX    0             225.000000E-09 
+   TPPCQHLMN    0              70.000000E-09 
+   TPPCQHLTY    0             175.000000E-09 
+   TPPCQHLMX    0             225.000000E-09 
+    TWCLKLMN    0               0            
+    TWCLKLTY  165.000000E-09  125.000000E-09 
+    TWCLKLMX  330.000000E-09  290.000000E-09 
+    TWCLKHMN    0               0            
+    TWCLKHTY  165.000000E-09  125.000000E-09 
+    TWCLKHMX  330.000000E-09  290.000000E-09 
+     TWPCLMN    0               0            
+     TWPCLTY   30.000000E-09  125.000000E-09 
+     TWPCLMX   60.000000E-09  200.000000E-09 
+   TSUDCLKMN    0               0            
+   TSUDCLKTY   70.000000E-09    0            
+   TSUDCLKMX  150.000000E-09    0            
+ TSUPCCLKHMN    0               0            
+ TSUPCCLKHTY    0               0            
+ TSUPCCLKHMX    0               0            
+    THDCLKMN    0               0            
+    THDCLKTY    0               0            
+    THDCLKMX    0               0            
+  TSUCECLKMN    0               0            
+  TSUCECLKTY    0               0            
+  TSUCECLKMX    0               0            
+   THCECLKMN    0               0            
+   THCECLKTY    0               0            
+   THCECLKMX    0               0            
+
+
+**** 11/04/20 17:03:32 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-last"  [ C:\Users\dell\Desktop\courses\adc\exp_10\last-pspicefiles\schematic1\last.sim ] 
+
+
+ ****     Digital IO  MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IO_STM          IO_4000A        IO_STD          
+        DRVL    0               1.649000E+03  104            
+        DRVH    0               1.649000E+03   96.4          
+       AtoD1                 AtoD_4000A      AtoD_STD        
+       AtoD2                 AtoD_4000A_NX   AtoD_STD_NX     
+       AtoD3                 AtoD_4000A      AtoD_STD        
+       AtoD4                 AtoD_4000A_NX   AtoD_STD_NX     
+       DtoA1 DtoA_STM        DtoA_4000A      DtoA_STD        
+       DtoA2 DtoA_STM        DtoA_4000A      DtoA_STD        
+       DtoA3 DtoA_STM        DtoA_4000A      DtoA_STD        
+       DtoA4 DtoA_STM        DtoA_4000A      DtoA_STD        
+    DIGPOWER                 CD4000_PWR                      
+      TSWHL1                    7.070000E-09    1.511000E-09 
+      TSWHL2                    6.940000E-09    1.487000E-09 
+      TSWHL3                    9.330000E-09    1.511000E-09 
+      TSWHL4                    9.180000E-09    1.487000E-09 
+      TSWLH1                    8.580000E-09    3.517000E-09 
+      TSWLH2                    8.370000E-09    3.564000E-09 
+      TSWLH3                   10.730000E-09    3.517000E-09 
+      TSWLH4                   10.590000E-09    3.564000E-09 
+       TPWRT  100.000000E+03  100.000000E+03  100.000000E+03 
+
+
+
+          JOB CONCLUDED
+
+**** 11/04/20 17:03:32 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-last"  [ C:\Users\dell\Desktop\courses\adc\exp_10\last-pspicefiles\schematic1\last.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time                    =         .23
+

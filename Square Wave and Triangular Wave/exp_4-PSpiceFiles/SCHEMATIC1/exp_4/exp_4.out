@@ -1,0 +1,124 @@
+
+**** 11/05/20 13:21:24 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-exp_4"  [ C:\Users\dell\Desktop\courses\adc\exp_4\exp_4-pspicefiles\schematic1\exp_4.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "exp_4.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 6ms 0 SKIPBP 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source EXP_4
+X_U1         N00254 N00275 N000562 N000563 N00316 LM741
+V_V1         0 N000563 15
+V_V2         N000562 0 15
+R_R1         N00275 N00316  4.5k TC=0,0 
+R_R2         N00254 N00316  10k TC=0,0 
+R_R3         0 N00254  10k TC=0,0 
+C_C1         0 N00275  0.1u  TC=0,0 
+X_U2         0 N00504 N004962 N004621 N00508 LM741
+V_V4         N004962 0 15
+V_V3         0 N004621 15
+C_C2         N00504 N00508  0.1u  TC=0,0 
+R_R4         N00504 N00508  1k TC=0,0 
+R_R5         N00316 N00504  1k TC=0,0 
+
+**** RESUMING exp_4.cir ****
+.END
+
+**** 11/05/20 13:21:24 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-exp_4"  [ C:\Users\dell\Desktop\courses\adc\exp_4\exp_4-pspicefiles\schematic1\exp_4.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.x_lm741.dx X_U1.x_lm741.dy X_U2.x_lm741.dx X_U2.x_lm741.dy 
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03    1               1.000000E-03 
+         CJO                   10.000000E-12                   10.000000E-12 
+
+
+**** 11/05/20 13:21:24 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-exp_4"  [ C:\Users\dell\Desktop\courses\adc\exp_4\exp_4-pspicefiles\schematic1\exp_4.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.x_lm741.qx X_U2.x_lm741.qx 
+               NPN             NPN             
+       LEVEL    1               1            
+          IS  800.000000E-18  800.000000E-18 
+          BF   93.75           93.75         
+          NF    1               1            
+          BR    1               1            
+          NR    1               1            
+         ISS    0               0            
+          RE    0               0            
+          RC    0               0            
+         CJE    0               0            
+         VJE     .75             .75         
+         CJC    0               0            
+         VJC     .75             .75         
+         MJC     .33             .33         
+        XCJC    1               1            
+         CJS    0               0            
+         VJS     .75             .75         
+          KF    0               0            
+          AF    1               1            
+          CN    2.42            2.42         
+           D     .87             .87         
+
+
+
+          JOB CONCLUDED
+
+**** 11/05/20 13:21:24 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-exp_4"  [ C:\Users\dell\Desktop\courses\adc\exp_4\exp_4-pspicefiles\schematic1\exp_4.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .48
+

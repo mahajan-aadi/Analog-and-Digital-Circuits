@@ -1,0 +1,256 @@
+
+**** 11/05/20 13:14:44 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-exp_3"  [ C:\Users\dell\Desktop\courses\adc\exp_3\exp_3-pspicefiles\schematic1\exp_3.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "exp_3.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 4ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source EXP_3
+X_U1         0 N00314 N000562 N000563 N00437 LM741
+R_R1         N00322 N00314  1k TC=0,0 
+R_R2         N00314 N00405  1k TC=0,0 
+R_R3         0 N00405  1k TC=0,0 
+D_D1         N00314 N00437 D1N4001 
+D_D2         N00437 N00405 D1N4001 
+V_V1         0 N000563 15
+V_V2         N000562 0 15
+V_V3         N00322 0  
++SIN 0 0.5 1k 0 0 0
+V_V4         0 N009661 15
+R_R4         N00910 N00918  1k TC=0,0 
+R_R5         N01032 N00910  1k TC=0,0 
+X_U2         0 N00910 N010242 N009661 N01060 LM741
+V_V6         N010242 0 15
+V_V5         N01032 0  
++SIN 0 0.5 1k 0 0 0
+D_D3         N00918 N01060 D1N4001 
+D_D4         N01060 N01416 D1N4001 
+V_V7         0 N015381 15
+X_U3         N01416 N01588 N015802 N015381 N01592 LM741
+V_V8         N015802 0 15
+R_R7         N00918 N01588  1k TC=0,0 
+R_R8         N01588 N01592  1k TC=0,0 
+R_R9         N00910 N01416  1k TC=0,0 
+
+**** RESUMING exp_3.cir ****
+.END
+
+**** 11/05/20 13:14:44 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-exp_3"  [ C:\Users\dell\Desktop\courses\adc\exp_3\exp_3-pspicefiles\schematic1\exp_3.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4001         X_U1.x_lm741.dx X_U1.x_lm741.dy X_U2.x_lm741.dx 
+          IS   14.110000E-09  800.000000E-18  800.000000E-18  800.000000E-18 
+           N    1.984                                                        
+         IKF   94.81                                                         
+          BV   75                                                            
+         IBV   10.000000E-06                                                 
+          RS     .03389         1               1.000000E-03    1            
+          TT    5.700000E-06                                                 
+         CJO   25.890000E-12                   10.000000E-12                 
+          VJ     .3245                                                       
+           M     .44                                                         
+
+
+               X_U2.x_lm741.dy X_U3.x_lm741.dx X_U3.x_lm741.dy 
+          IS  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1.000000E-03    1               1.000000E-03 
+         CJO   10.000000E-12                   10.000000E-12 
+
+
+**** 11/05/20 13:14:44 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-exp_3"  [ C:\Users\dell\Desktop\courses\adc\exp_3\exp_3-pspicefiles\schematic1\exp_3.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.x_lm741.qx X_U2.x_lm741.qx X_U3.x_lm741.qx 
+               NPN             NPN             NPN             
+       LEVEL    1               1               1            
+          IS  800.000000E-18  800.000000E-18  800.000000E-18 
+          BF   93.75           93.75           93.75         
+          NF    1               1               1            
+          BR    1               1               1            
+          NR    1               1               1            
+         ISS    0               0               0            
+          RE    0               0               0            
+          RC    0               0               0            
+         CJE    0               0               0            
+         VJE     .75             .75             .75         
+         CJC    0               0               0            
+         VJC     .75             .75             .75         
+         MJC     .33             .33             .33         
+        XCJC    1               1               1            
+         CJS    0               0               0            
+         VJS     .75             .75             .75         
+          KF    0               0               0            
+          AF    1               1               1            
+          CN    2.42            2.42            2.42         
+           D     .87             .87             .87         
+
+
+**** 11/05/20 13:14:44 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-exp_3"  [ C:\Users\dell\Desktop\courses\adc\exp_3\exp_3-pspicefiles\schematic1\exp_3.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00314) 18.57E-06 (N00322)    0.0000 (N00405) 103.8E-06 (N00437)     .1369     
+
+(N00910) 18.65E-06 (N00918) 62.12E-06 (N01032)    0.0000 (N01060)     .1209     
+
+(N01416) 73.58E-06 (N01588) 92.82E-06 (N01592) 203.3E-06 (N000562)   15.0000    
+
+(N000563)  -15.0000                   (N009661)  -15.0000                       
+
+(N010242)   15.0000                   (N015381)  -15.0000                       
+
+(N015802)   15.0000                   (X_U1.x_lm741.6)-12.91E-06                
+
+(X_U1.x_lm741.7)     .1370            (X_U1.x_lm741.8)     .1370                
+
+(X_U1.x_lm741.9)    0.0000            (X_U2.x_lm741.6)-11.40E-06                
+
+(X_U2.x_lm741.7)     .1210            (X_U2.x_lm741.8)     .1210                
+
+(X_U2.x_lm741.9)    0.0000            (X_U3.x_lm741.6)-21.10E-09                
+
+(X_U3.x_lm741.7) 208.8E-06            (X_U3.x_lm741.8) 208.8E-06                
+
+(X_U3.x_lm741.9)    0.0000            (X_U1.x_lm741.10)    -.6077               
+
+(X_U1.x_lm741.11)   14.9600           (X_U1.x_lm741.12)   14.9600               
+
+(X_U1.x_lm741.13)    -.5938           (X_U1.x_lm741.14)    -.5938               
+
+(X_U1.x_lm741.53)   14.0000           (X_U1.x_lm741.54)  -14.0000               
+
+(X_U1.x_lm741.90) 202.1E-06           (X_U1.x_lm741.91)   40.0000               
+
+(X_U1.x_lm741.92)  -40.0000           (X_U1.x_lm741.99)    0.0000               
+
+(X_U2.x_lm741.10)    -.6077           (X_U2.x_lm741.11)   14.9600               
+
+(X_U2.x_lm741.12)   14.9600           (X_U2.x_lm741.13)    -.5938               
+
+(X_U2.x_lm741.14)    -.5938           (X_U2.x_lm741.53)   14.0000               
+
+(X_U2.x_lm741.54)  -14.0000           (X_U2.x_lm741.90) 147.4E-06               
+
+(X_U2.x_lm741.91)   40.0000           (X_U2.x_lm741.92)  -40.0000               
+
+(X_U2.x_lm741.99)    0.0000           (X_U3.x_lm741.10)    -.6076               
+
+(X_U3.x_lm741.11)   14.9600           (X_U3.x_lm741.12)   14.9600               
+
+(X_U3.x_lm741.13)    -.5937           (X_U3.x_lm741.14)    -.5937               
+
+(X_U3.x_lm741.53)   14.0000           (X_U3.x_lm741.54)  -14.0000               
+
+(X_U3.x_lm741.90) 110.5E-06           (X_U3.x_lm741.91)   40.0000               
+
+(X_U3.x_lm741.92)  -40.0000           (X_U3.x_lm741.99)    0.0000           
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.667E-03
+    V_V2        -1.667E-03
+    V_V3         1.857E-08
+    V_V4        -1.667E-03
+    V_V6        -1.667E-03
+    V_V5         1.865E-08
+    V_V7        -1.667E-03
+    V_V8        -1.667E-03
+    X_U1.x_lm741.vb  -1.291E-10
+    X_U1.x_lm741.vc   1.386E-11
+    X_U1.x_lm741.ve   1.605E-11
+    X_U1.x_lm741.vlim   2.021E-07
+    X_U1.x_lm741.vlp  -4.000E-11
+    X_U1.x_lm741.vln  -4.000E-11
+    X_U2.x_lm741.vb  -1.140E-10
+    X_U2.x_lm741.vc   1.388E-11
+    X_U2.x_lm741.ve   1.604E-11
+    X_U2.x_lm741.vlim   1.474E-07
+    X_U2.x_lm741.vlp  -4.000E-11
+    X_U2.x_lm741.vln  -4.000E-11
+    X_U3.x_lm741.vb  -2.110E-13
+    X_U3.x_lm741.vc   1.400E-11
+    X_U3.x_lm741.ve   1.592E-11
+    X_U3.x_lm741.vlim   1.105E-07
+    X_U3.x_lm741.vlp  -4.000E-11
+    X_U3.x_lm741.vln  -4.000E-11
+
+    TOTAL POWER DISSIPATION   1.50E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 11/05/20 13:14:44 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-exp_3"  [ C:\Users\dell\Desktop\courses\adc\exp_3\exp_3-pspicefiles\schematic1\exp_3.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .31
+
